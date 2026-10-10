@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --deep-navy: #0A0F1F;
+    --electric-blue: #2D6BFF;
+    --cyber-teal: #00C2A8;
+    --slate-gray: #6B7280;
+    --soft-white: #F9FAFB;
+    --graphite-black: #111827;
+    --royal-purple: #7C3AED;
+    --gold: #FBBF24;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--deep-navy);
+    color: var(--soft-white);
+  }
+}

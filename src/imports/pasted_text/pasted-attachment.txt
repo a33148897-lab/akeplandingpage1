@@ -1,0 +1,428 @@
+Design and build a complete, production-ready React website for AKEP 
+(akepacademics.com) — an AI-powered dissertation management platform 
+for universities. The website should feel like a premium SaaS product 
+(think Notion, Linear, or Vercel in terms of polish), with a dark purple 
+brand identity already established.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BRAND IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Colors:
+- Primary Background: #0D0B1F (deep dark navy)
+- Secondary Background: #1A1535
+- Primary Purple: #6B21F5
+- Accent Purple: #9B59F5
+- Light Purple: #C4A8FF
+- Text Primary: #FFFFFF
+- Text Secondary: #A89BC2
+- CTA Green/Teal: #00D4AA (for key action buttons)
+- Card Background: rgba(255,255,255,0.04)
+- Border: rgba(255,255,255,0.08)
+
+Typography:
+- Headings: Inter Bold or Plus Jakarta Sans Bold
+- Body: Inter Regular
+- Monospace accents: JetBrains Mono (for stats, numbers)
+
+Logo: The existing AKEP "A" lambda mark — white on dark purple
+
+Visual Style:
+- Glassmorphism cards with subtle borders
+- Glowing purple orbs / particle effects in backgrounds
+- Smooth gradient overlays
+- Subtle animated elements (floating cards, pulsing glows)
+- Clean, minimal, academic but futuristic
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECH STACK (React)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- React 18 + Vite
+- Tailwind CSS for styling
+- Framer Motion for animations
+- React Router v6 for page navigation
+- React Hook Form for all forms
+- Axios for API calls (Render backend later)
+- react-intersection-observer for scroll animations
+- Lucide React for icons
+- Recharts for any data visualizations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGES & STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/ → Home (Landing)
+/about → About Us
+/features → Features
+/how-it-works → How It Works
+/pricing → Pricing
+/use-cases → Use Cases (Hospital, Pharmacy, Store equivalent = 
+             University types: Research Universities, Teaching 
+             Universities, Community Colleges)
+/blog → Blog (static placeholder with 3 sample posts)
+/contact → Contact Us
+/waitlist → Waitlist / Early Access (dedicated page)
+/privacy → Privacy Policy (placeholder)
+/terms → Terms of Service (placeholder)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 1: HOME (/)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NAVBAR (sticky, blur on scroll):
+- Left: AKEP logo + wordmark
+- Center: Home | Features | How It Works | Pricing | About
+- Right: "Join Waitlist" button (teal, rounded pill) + 
+         "Login" ghost button
+- Mobile: hamburger menu with slide-in drawer
+
+HERO SECTION:
+- Badge: "🚀 Now accepting pilot universities"
+- H1: "The AI Operating System for University Dissertation Management"
+- Subheading: "Eliminate research duplication, automate approval 
+  workflows, and unlock your institution's research value — 
+  powered by AI built for academia."
+- Two CTAs: 
+    Primary: "Join the Waitlist" (teal pill button)
+    Secondary: "Watch Demo" (ghost button with play icon)
+- Floating dashboard mockup/screenshot on the right 
+  (show a dark UI with dissertation workflow)
+- Animated purple glow orbs behind
+- Scroll indicator
+
+SOCIAL PROOF BAR:
+- "Trusted by researchers across 3 pilot institutions"
+- University logos (placeholder silhouettes)
+- Stats: "3 Pilot Universities | €5B+ Market | 2.4M Dissertations/year"
+
+PROBLEM SECTION:
+Background: slightly lighter dark card
+Title: "Universities Are Losing Billions to Broken Research Processes"
+Four problem cards in 2x2 grid:
+1. 🔁 Research Duplication — "40% of dissertations unknowingly 
+   replicate existing work"
+2. ⏳ 6-Month Delays — "Manual workflows stall student progress 
+   and waste administrative hours"
+3. 🧠 Student Burnout — "Unclear processes contribute to 40% of 
+   graduate students experiencing anxiety"
+4. 💸 Lost Institutional Value — "No centralized system means 
+   fragmented knowledge and zero monetization"
+Bottom: "Result: €5B+ wasted annually across European universities"
+(bold, teal highlight)
+
+SOLUTION SECTION:
+Title: "One Platform. Complete Dissertation Lifecycle."
+Four feature blocks in horizontal scroll or 2x2 grid:
+1. 🤖 AI Originality Engine — Real-time duplicate detection 
+   against 50M+ papers with 95% accuracy
+2. 🎯 Smart Supervisor Matching — ML-powered pairing based on 
+   expertise, capacity, and research alignment
+3. ⚙️ Automated Workflows — End-to-end routing from proposal 
+   submission to final defense
+4. 📊 Institutional Dashboard — Real-time visibility, risk 
+   detection, and ROI analytics
+Each block: icon, title, description, subtle card with glow border
+
+HOW IT WORKS SECTION:
+Title: "From Chaos to Clarity in 4 Steps"
+Horizontal stepper (desktop) / vertical (mobile):
+Step 1: University Onboarding — "Faculties, Deans, HODs, 
+        Supervisors and Students onboarded in minutes"
+Step 2: AI Dissertation Review — "Duplicate checking, 
+        abstract validation, similarity scoring — automated"
+Step 3: Encrypted Supervision Workflow — "Chapter-by-chapter 
+        review with AI-assisted feedback and secure communication"
+Step 4: Final Submission & Repository — "Approved dissertations 
+        automatically archived in your institutional repository 
+        with optional monetization tiers"
+
+METRICS SECTION:
+Dark background with purple gradient overlay
+4 animated counter stats:
+- 70% Reduction in Administrative Overhead
+- 60% Decrease in Duplicate Research
+- 50% Faster Approval Cycles
+- 35% Improvement in Completion Rates
+Subtitle: "Measured across pilot institutions"
+
+TESTIMONIALS SECTION:
+Title: "What Academics Are Saying"
+3 quote cards (glassmorphism style):
+- [University Registrar, Sierra Leone] — 
+  "AKEP transformed how we manage our dissertation pipeline. 
+  What used to take months now takes days."
+- [PhD Supervisor placeholder] — 
+  "The AI matching found me students whose research perfectly 
+  aligned with my expertise. First time that's ever happened."
+- [Graduate Student placeholder] — 
+  "I knew my topic was original before I even wrote my proposal. 
+  That confidence is priceless."
+Star ratings (5/5) on each card
+
+PRICING PREVIEW SECTION:
+Title: "Simple, Transparent Pricing"
+3 tiers displayed:
+- Starter (< 5K students): €50K/year — Core workflow + 
+  basic AI features
+- Professional (5K–10K students): €100K/year — Full AI suite + 
+  analytics (POPULAR badge)
+- Enterprise (10K+ students): €150K/year — Custom + 
+  white-labeling + API access
+Each card: feature list, price, CTA button
+Below: "NGO, Government, and research institution partnerships 
+        available — contact us"
+
+WAITLIST / EMAIL CAPTURE SECTION:
+Full-width section with purple gradient background
+Title: "Be Among the First Universities on AKEP"
+Subtext: "We're accepting a limited number of pilot institutions 
+          in 2025. Join the waitlist to secure your place and 
+          get 3 months free."
+Form:
+  - Full Name (text input)
+  - Email Address (email input)
+  - Institution Name (text input)
+  - Your Role dropdown: 
+    [Rector/VC | Registrar | Dean | HOD | Supervisor | Student | Other]
+  - Country (text input)
+  - How did you hear about us? (text input, optional)
+  - Submit button: "Join the Waitlist" (full width, teal)
+Below form: "🔒 No spam. No credit card. Cancel anytime."
+API: POST to /api/waitlist (Render endpoint, configurable via 
+     VITE_API_BASE_URL env variable)
+Success state: show confirmation message with name personalized:
+"You're on the list, [Name]! We'll be in touch soon. 🎉"
+Error state: show friendly error with retry option
+
+FOOTER:
+4-column layout:
+Col 1: AKEP logo + tagline + social icons (LinkedIn, Twitter, 
+       Instagram, Facebook)
+Col 2: Product — Features, How It Works, Pricing, Use Cases, Roadmap
+Col 3: Company — About, Blog, Careers (coming soon), Press
+Col 4: Contact — info@akepacademics.com | +43 677 636 66 993 | 
+       Klagenfurt, Austria
+Bottom bar: © 2025 AKEP. All rights reserved. | Privacy | Terms
+Newsletter mini-form in footer: email input + "Subscribe" button
+POST to /api/newsletter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 2: FEATURES (/features)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hero: "Everything Your Institution Needs. Nothing It Doesn't."
+6 detailed feature sections, alternating left/right layout:
+1. AI Originality Engine — screenshot mockup + bullet points
+2. Intelligent Supervisor Matching — diagram/mockup
+3. Automated Workflow Orchestration — flow diagram
+4. Strategic Analytics Dashboard — dashboard screenshot
+5. Encrypted Supervision & Communication — security icons
+6. Research Monetization Repository — tiered access diagram
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 3: HOW IT WORKS (/how-it-works)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Full walkthrough page with:
+- Animated timeline (vertical, scroll-triggered)
+- Role switcher: view journey as Student | Supervisor | 
+  HOD | Dean | Admin
+- Each role shows their specific workflow steps
+- FAQ accordion at bottom (8 questions)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 4: PRICING (/pricing)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Toggle: Annual / Monthly pricing
+3 tier cards (same as home preview but expanded)
+Full feature comparison table below cards
+"Contact Sales" section for enterprise / NGO / Government
+FAQ section specific to pricing (6 questions)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 5: ABOUT (/about)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mission statement section
+Founder story: Abdulai's journey — Sierra Leone → Austria → AKEP
+  (photo placeholder with bio)
+The problem we lived firsthand section
+Vision timeline: 2025 → 2027 → 2030
+Advisory board section (placeholder cards with role + institution)
+Stats: MSc AI & Cybersecurity | 3 Pilot Universities | 
+       Klagenfurt, Austria | Founded 2025
+"Why Austria, Why Africa" section — the bridge narrative
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 6: WAITLIST (/waitlist) — DEDICATED PAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Full page waitlist experience:
+Left side (60%): 
+  - "Join the AKEP Early Access Program"
+  - What you get as a pilot university:
+    ✅ 3 months free access
+    ✅ Direct input into product roadmap
+    ✅ Priority onboarding and dedicated support
+    ✅ Co-authorship on case study
+    ✅ Locked-in pilot pricing forever
+  - Counter: "47 institutions already on the list" 
+    (hardcoded for now, update via env var)
+  - Logos of pilot institutions (placeholder)
+
+Right side (40%):
+  Full waitlist form (same fields as homepage form)
+  with multi-step UX:
+    Step 1: Name + Email + Institution
+    Step 2: Role + Country + University size
+    Step 3: "What's your biggest dissertation challenge?" 
+            (textarea) + submit
+  Progress indicator at top
+  
+  API: POST to VITE_API_BASE_URL/api/waitlist
+  Handle loading state, success state, error state
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 7: CONTACT (/contact)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Split layout:
+Left: Contact form
+  - Name, Email, Institution, Subject dropdown 
+    [Partnership | Investment | Pilot Program | 
+     Technical | Press | Other]
+  - Message textarea
+  - Submit button
+  API: POST to VITE_API_BASE_URL/api/contact
+
+Right: Contact details
+  - info@akepacademics.com
+  - +43 677 636 66 993
+  - Klagenfurt, Austria
+  - LinkedIn, Twitter icons
+  - Office hours: Mon–Fri, 9am–6pm CET
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GLOBAL COMPONENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<Navbar /> — sticky, blur backdrop, active link state
+<Footer /> — 4-column as described
+<WaitlistModal /> — triggered by any "Join Waitlist" CTA 
+                    if not on /waitlist page
+<CookieBanner /> — GDPR compliant, simple accept/decline
+<ScrollToTop /> — smooth scroll to top on route change
+<SEOHead /> — dynamic meta tags per page
+<LoadingSpinner /> — for form submissions
+<Toast /> — success/error notifications
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+API INTEGRATION (Render-ready)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All API calls use:
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
+Endpoints to integrate:
+  POST /api/waitlist   → { name, email, institution, role, 
+                           country, source, challenge }
+  POST /api/contact    → { name, email, institution, 
+                           subject, message }
+  POST /api/newsletter → { email }
+
+All forms:
+  - Validated with React Hook Form + Zod
+  - Show loading spinner on submit
+  - Show success message on 200 response
+  - Show error message on failure with retry button
+  - Disable submit button during loading
+  - Clear form on success
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ANIMATIONS & INTERACTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Hero headline: fade up + stagger on load
+- Stats section: count-up animation on scroll into view
+- Feature cards: fade-in from bottom on scroll
+- Problem cards: slight hover lift with glow border
+- Testimonial cards: horizontal scroll on mobile, 
+  auto-rotate every 5s on desktop
+- Pricing cards: scale on hover, highlight recommended
+- Navbar: background blurs on scroll past hero
+- Page transitions: fade between routes (Framer Motion)
+- Waitlist form: smooth step transitions with progress bar
+- CTA buttons: subtle scale on hover + glow pulse
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RESPONSIVE BREAKPOINTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mobile: 375px — single column, hamburger nav
+Tablet: 768px — 2-column grids, condensed nav
+Desktop: 1280px — full layout as described
+Wide: 1440px — max-width container, centered
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FILE STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+src/
+  components/
+    layout/
+      Navbar.jsx
+      Footer.jsx
+    ui/
+      Button.jsx
+      Card.jsx
+      Badge.jsx
+      Input.jsx
+      Modal.jsx
+      Toast.jsx
+      Spinner.jsx
+    sections/
+      Hero.jsx
+      Problem.jsx
+      Solution.jsx
+      HowItWorks.jsx
+      Metrics.jsx
+      Testimonials.jsx
+      Pricing.jsx
+      WaitlistCTA.jsx
+  pages/
+    Home.jsx
+    Features.jsx
+    HowItWorks.jsx
+    Pricing.jsx
+    About.jsx
+    Waitlist.jsx
+    Contact.jsx
+    Blog.jsx
+    Privacy.jsx
+    Terms.jsx
+  hooks/
+    useScrollAnimation.js
+    useCounter.js
+    useWaitlistForm.js
+  services/
+    api.js   ← all Axios calls here
+  utils/
+    validators.js
+  styles/
+    globals.css
+  App.jsx
+  main.jsx
+  .env.example  ← VITE_API_BASE_URL=https://your-app.onrender.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DEPLOYMENT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Build: npm run build → dist/
+- Deploy to Vercel or Netlify (static)
+- Set VITE_API_BASE_URL in deployment environment variables
+  to point to your Render backend URL
+- All form POSTs will automatically hit your Render API
+  once the variable is set — no code changes needed
